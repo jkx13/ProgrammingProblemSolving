@@ -287,3 +287,21 @@
 	141.android.permission.ACCESS_COARSE_LOCATION允许程序通过WiFi或移动基站的方式获取用户错略的经纬度信息
 	
 	142.android.permission.ACCESS_CHECKIN_PROPERTIES允许程序读取或写入登记check-in数据库属性表的权限
+	
+## Android gradlew命令
+	./gradlew -v 版本号，首次运行，没有gradle的要下载的哦。
+	
+	./gradlew clean 删除HelloWord/app目录下的build文件夹
+	
+	./gradlew build 检查依赖并编译打包
+	
+	./gradlew assembleDebug 编译并打Debug包
+	
+	./gradlew assembleRelease 编译并打Release的包
+	
+	./gradlew installRelease Release模式打包并安装
+	
+	./gradlew uninstallRelease 卸载Release模式包
+	
+	Android Studio 多渠道打包、自动版本号及 gradlew 命令的基本使用
+[详细内容](https://www.jianshu.com/p/44d40f8e67c9)
