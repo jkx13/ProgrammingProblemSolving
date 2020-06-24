@@ -87,4 +87,12 @@
 	设置证书Build Setting 》Signing
 ![设置证书](./ios_imgs/ios-cer.png)
 
+## 使用LaunchScreen.storyboard添加开机启动图
+	1.点击LaunchScreen.storyboard
+![启动图](./ios_imgs/ios-launch.png)
+
+	2.添加UIImageView作为启动图片
+	3.把UIImageView拖满整个适配屏，再添加约束
+![设置](./ios_imgs/ios-img.png)
+
 	
