@@ -104,6 +104,18 @@
 	
 ##### Regex Previewer
 	用于实时测试正则表达式的实用工具
-	
-	
+
+##### VS code 豆沙绿护眼主题 Atom One Light
+	 快捷键输入  Ctrl+Shift+p   ，输入settings,选择open settings (JSON)
+```
+"workbench.colorTheme": "Atom One Light",
+    "workbench.colorCustomizations": {
+    "[Atom One Light]": {
+            "editor.background": "#C7EDCC",   
+        "sideBar.background": "#C7EDCC",
+        "activityBar.background": "#C7EDCC",       
+        },
+    },
+```
+
 	
