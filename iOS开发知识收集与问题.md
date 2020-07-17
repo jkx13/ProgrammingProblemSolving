@@ -95,4 +95,12 @@
 	3.把UIImageView拖满整个适配屏，再添加约束
 ![设置](./ios_imgs/ios-img.png)
 
+## 签名报错HBuilder has conflicting provisioning settings.
+	在Build Setting 搜索 provisioning 删除对应手动设置的
 	
+## pt单位的解释
+	iOS 中的 pt 和安卓中的单位 dp 本质上是一个概念，都是独立像素的意思；
+	icon对应的像素1pt=1px;
+
+## Hbuilder离线打包PDRCore.h' file not found
+	保证SDK与项目在同一目录
