@@ -5,7 +5,7 @@
 ## HbuildX连接到 夜神模拟器 上运行
 [HBuilder](https://www.dcloud.io/hbuilderx.html)
 [夜神模拟器](https://www.yeshen.com/)
-1. 进入夜神模拟器安装目录（找到bin或MacOS）nox_adb(或adb)执行文件（执行`nox_adb connect 127.0.0.1:62001`或`adb connect 127.0.0.1:62001`）（执行查看`nox_adb devices`或`adb devices`)
+1. 进入夜神模拟器安装目录（找到bin或MacOS）nox_adb(或adb)执行文件（windows电脑执行`nox_adb connect 127.0.0.1:62001`或苹果电脑需授权`sudo adb connect 127.0.0.1:62001`）（执行查看`nox_adb devices`或`adb devices`)
 
 2. 进入HubildX安装目录下（HBuilderX/plugins/launcher/tools/adbs）执行 `adb connect 127.0.0.1:62001`
 
