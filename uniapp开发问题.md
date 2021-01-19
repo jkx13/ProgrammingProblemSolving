@@ -12,3 +12,19 @@
 3. 设置adb端口
 ![进入设置](./uniapp_imgs/adb_hbuildx.png)
 ![设置adb端口](./uniapp_imgs/adb_set.png)
+
+## h5 app 应用状态切换
+
+```
+document.addEventListener('pause',function(){console.log('应用从前台切入后台')},false);
+//'resume':应用从后台切换到前台
+//'background': 应用到后台
+//'foreground':程序切换前台运行
+
+document.addEventListener('visibilitychange', function () {
+            if (document.visibilityState == 'hidden') {
+              console.log('应用从前台切换到后台');
+            }
+});
+
+```
