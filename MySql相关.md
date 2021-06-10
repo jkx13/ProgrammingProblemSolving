@@ -10,12 +10,12 @@ tail -l /etc/profile   //查看配置后的全局路径
 source /etc/profile  //执行source使全局路径生效
 
 
-开启mysql远程连接
+#####  开启mysql远程连接
 1. grant all privileges on *.* to 'root'@'%' identified by 'root' with grant option;
 2. flush privileges;刷新权限
 3. 查询用户：  SELECT DISTINCT CONCAT('User: ''',user,'''@''',host,''';') AS query FROM mysql.user;
 4. 使用exit命令退出MySQL
-
+```
 然后打开vim  /etc/mysql/my.cnf
 
 将bind-address    = 127.0.0.1
@@ -27,7 +27,9 @@ source /etc/profile  //执行source使全局路径生效
  /etc/init.d/mysql stop
  
  /etc/init.d/mysql start
+```
  
- 5.查看端口号
-
- show global variables like 'port';  
+ 5. 查看端口号
+```
+show global variables like 'port';  
+```
