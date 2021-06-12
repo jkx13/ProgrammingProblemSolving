@@ -22,6 +22,7 @@ netstat -lnpt
  ##### 检查端口被哪个进程占用
  ```
  netstat -lnpt |grep （端口)
+ netstat -antl
 ```
 
 ##### 查看进程的详细信息
