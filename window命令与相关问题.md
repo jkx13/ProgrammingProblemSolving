@@ -32,3 +32,36 @@
 	
 ## windows进入指定路径 并执行
 	cmd /k "cd /d D:\rn_work\Ls.Trade.WebApp&&执行命令"
+	
+
+### 打开环境变量
+	按快捷键win+R后，输入“sysdm.cpl”打开环境变量
+
+### 配置Node环境变量
+	D:\Program\nodejs\node-global
+	D:\Program\nodejs\node_modules
+	配置node的目录的路径
+	注意：出现问题的原因是node_cache的路径中存在空格
+	npm config set prefix "E:\Program~1\nodejs\node_global"
+	npm config set cache "E:\Program~1\nodejs\node_cache"
+
+### 配置java
+	JAVA_HOME:D:\Program Files\Java\jdk1.8.0_77
+	CLASSPATH:.;%JAVA_HOME%\lib;%JAVA_HOME%\lib\dt.jar;%JAVA_HOME%\lib\tools.jar;
+	path：
+	%JAVA_HOME%\bin
+
+### 配置android:
+	ANDROID_HOME:C:\Users\jack\AppData\Local\Android\Sdk
+	path:
+	%ANDROID_HOME%\platform-tools
+	%ANDROID_HOME%\emulator
+	%ANDROID_HOME%\tools
+	%ANDROID_HOME%\tools\bin
+
+### keytool查看keystore签名信息
+keytool -list -v -keystore my_android.keystore -storepass keystore_password
+
+
+### 进入指定目录执行
+	cmd /k "cd /d D:\work\myRNApp && 执行命令" 进入指定目录
