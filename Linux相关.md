@@ -113,3 +113,44 @@ rpm -qa | grep "软件或者包的名字"(或 yum list installed | grep "gcc")
 ```
  
 
+## 配置静态IP地址（Centos7)访问网络
+	1.示例配置
+```json
+TYPE=Ethernet
+PROXY_METHOD=none
+BROWSER_ONLY=no
+BOOTPROTO=static        # 地址分配模式
+DEFROUTE=yes
+IPV4_FAILURE_FATAL=no
+IPV6INIT=yes
+IPV6_AUTOCONF=yes
+IPV6_DEFROUTE=yes
+IPV6_FAILURE_FATAL=no
+IPV6_ADDR_GEN_MODE=stable-privacy
+NAME=ens33              # 网卡名称
+UUID=1fccfa54-98bd-4101-9eca-bc976d7c042a
+DEVICE=ens33
+ONBOOT=yes              # 是否开机激活
+IPADDR=192.168.0.135    # IP地址
+NETMASK=255.255.255.0   # 子网掩码
+GATEWAY=192.168.0.1     # 网关地址
+DNS1=114.114.114.114    # DNS地址
+DNS2=8.8.8.8            # DNS地址
+```
+
+	2.重启网络
+```shell
+service network restart
+```
+
+## 配置动态网络(Centos7)
+	1.配置
+```
+BOOTPROTO=dhcp
+ONBOOT=yes
+```
+
+	2.重启网络
+```
+service network restart
+```
