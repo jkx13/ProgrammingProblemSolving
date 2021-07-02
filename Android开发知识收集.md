@@ -304,4 +304,7 @@
 	./gradlew uninstallRelease 卸载Release模式包
 	
 	Android Studio 多渠道打包、自动版本号及 gradlew 命令的基本使用
-[详细内容](https://www.jianshu.com/p/44d40f8e67c9)
+
+## 点9图制作
+	创建点9图：在资源中点中图片，右键选中Create 9Patch 创建点9图
+	删除描边： 用按下shift 再按下 左键
