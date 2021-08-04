@@ -308,3 +308,19 @@
 ## 点9图制作
 	创建点9图：在资源中点中图片，右键选中Create 9Patch 创建点9图
 	删除描边： 用按下shift 再按下 左键
+	
+## gradle下载镜像
+```
+https://mirrors.cloud.tencent.com/gradle/
+```
+
+## gradle放的位置
+```
+Mac系统默认下载到：/Users/(用户名)/.gradle/caches/modules-2/files-2.1
+Windows系统默认下载到：C:\Users\(用户名)\.gradle\caches\modules-2\files-2.1
+
+
+gradle压缩包下载完成后，记得放在
+C:\Users\154.gradle\wrapper\dists\gradle-4.1-all\bzyivzo6n839fup2jbap0tjew
+
+```
